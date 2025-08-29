@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Contact Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #2ad3ba; 
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #eee;
+      font-weight: normal;
+    }
+
+    input.name {
+      background: #e91e63; 
+    }
+
+    input.email {
+      background: #673ab7; 
+    }
+
+    textarea.message {
+      background: #ff5722; 
+      resize: none;
+      height: 100px;
+    }
+
+    button {
+      background: #e91e63; 
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form>
+      <input type="text" class="name" placeholder="Your Name">
+      <input type="email" class="email" placeholder="Email">
+      <textarea class="message" placeholder="Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
